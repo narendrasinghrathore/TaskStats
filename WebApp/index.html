@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />    
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/jquery-3.1.0.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="app/app.js"></script>
+</head>
+<body>
+    <div class="container" ng-controller="homeCtrl">
+        <h1>Welcome: {{appData.title}}</h1>
+        <div>
+            <a ng-if="showEdit" ng-click="enableEdit=true;showEdit=false">Add new task</a>
+        </div>
+        <div ng-if="enableEdit">
+            <div class="">
+                <div class="form-group">
+                    <i class="fa fa-wikipedia-w"></i>
+                    <input class="form-control" ng-model="task.Title" type="text" />
+                </div>
+                <div>
+                    <textarea ng-model="task.Detail" type="text" />
+                </div>
+                
+                <div class="form-group">
+                    <button class="btn btn-primary" ng-click="showEdit=true;enableEdit=false">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
