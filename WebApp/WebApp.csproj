@@ -60,7 +60,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="faicon-32x32.png" />
     <Content Include="data\data.json" />
+    <Content Include="Images\appIcon-96x96.png" />
     <Content Include="Scripts\version.json" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular.min.js.map" />
@@ -78,6 +80,10 @@
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-3.1.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.0.min.map" />
+    <Content Include="custom-fonts\Ubuntu.eot" />
+    <Content Include="custom-fonts\Ubuntu.ttf" />
+    <Content Include="custom-fonts\Ubuntu.woff" />
+    <Content Include="custom-fonts\Ubuntu.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
